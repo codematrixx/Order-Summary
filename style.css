@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card{
+    width: 400px;
+    background-color: var(--very-pale-blue);
+    color: var(--desaturated-blue);
+    border-radius: 20px;
+    box-shadow: 0 20px 30px -7px rgb(197 189 245);
+    letter-spacing: -0.4px;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.title{
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hero-img{
+    width:100%;
+}
+
+.container{
+    padding: 0 10%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.container > *{
+    margin: 10px 0;
+}
+
+.order-description{
+    line-height: 25px;
+    text-align: center;
+    font-size: 16px; 
+}
+
+.plan{
+    background-color: var(--very-pale-blue);
+    font-size: 14px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-description{
+    line-height: 25px;
+    margin-right: 75px;
+}
+
+.plan img{
+    height: 40px;
+}
+.plan-description strong{
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.plan a{
+    color: var(--bright-blue);
+    font-weight: 900;
+    transition: 250ms ease-in-out;
+}
+
+.plan a:hover{
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: 700;
+    
+}
+
+.btn{
+    background-color: var(--bright-blue);
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    padding: 16px 0;
+    box-shadow: 0 20px 20px -7px rgb(197 189 245);
+    transition: 250ms ease-in-out;
+}
+
+.btn:hover{
+    background-color: var(--desaturated-blue);
+    opacity: 0.8;
+}
+
+.cancel-btn{
+    color: var(--desaturated-blue);
+    font-size: 14px;  
+    transition: 250ms ease-in-out;
+    margin-top: 15px; 
+    margin-bottom: 50px;
+}
+
+.cancel-btn:hover{
+    color: var(--dark-blue);
+}
