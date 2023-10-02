@@ -10,7 +10,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](.images/Codematrixx-Order-Summary-Screenshot.jpg).
+(.images/Codematrixx-Order-Summary-Screenshot.jpg).
 
 ### Built with
 
